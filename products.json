@@ -1,0 +1,6 @@
+[
+    {"id": 1, "name": "Air-Fryer", "price": 600.00},
+    {"id": 2, "name": "Microondas", "price": 800.00},
+    {"id": 3, "name": "Frigideira", "price": 150.00},
+    {"id": 4, "name": "Pipoqueira", "price": 200.00}
+]
