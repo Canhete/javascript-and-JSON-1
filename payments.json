@@ -1,0 +1,7 @@
+[
+    "{\"paymentId\":1,\"customer\":\"Pedro\",\"amount\":100}",
+    "{\"paymentId\":\"2\",\"customer\":\"Ana\",\"amount\":97.5}",
+    "{\"paymentId\":3,\"customer\":\"Gabriela\",\"amount\":\"23.75\"}",
+    "{\"paymentId\":4,\"customer\":\"Victor\",\"amount\":19.3}",
+    "\"{'paymentId:' 5, 'customer': 'Caio', 'amount': 25.00}\""
+]

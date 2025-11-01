@@ -1,31 +1,12 @@
-/* Users — Create a single object file and validate it
+/* Filter data (IDs greater than X)
+Goal: Show only orders where orderId > 101. */
 
-Goal: Create config.json (a single object, not an array).
+import fs from "fs";
 
-Fields: theme (string), language (string), notifications (boolean) */
+const filename = "customerOrder.json";
+const file = fs.readFileSync(filename, "utf-8");
+const jsonfile = JSON.parse(file);
 
-const { Console } = require("console");
-const fs = require("fs");
+const filteredOrders = jsonfile.filter((e) => e.orderId > 2);
 
-const filename = "config.json";
-
-const configurations = {
-    "theme": "dark", 
-    "language": "pt-br", 
-    "notifications": 1
-}
-
-fs.writeFileSync(filename, configurations, null, 4);
-
-function validateJson(input){
-    try{
-        const file = fs.readFileSync(input, "utf-8");
-        JSON.parse(file);
-        console.log("VALID JSON!");
-    } catch (err) {
-        console.log("INVALID JSON!");
-        throw error;
-    }
-}
-
-validateJson(filename);
+console.table(filteredOrders);

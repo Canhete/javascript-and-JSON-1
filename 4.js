@@ -1,7 +1,7 @@
 /* Convert array → JSON string (stringify)
 Goal: Show how to stringify (pretty printed). */
 
-const fs = require("fs");
+import fs from "fs";
 
 const filename = "customerOrder.json";
 const file = fs.readFileSync(filename, "utf-8");

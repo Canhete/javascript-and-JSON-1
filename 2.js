@@ -2,9 +2,7 @@
 
 Fields: orderId (number), customer (string), total (number) */
 
-const { table } = require("console");
-const { json } = require("stream/consumers");
-const fs = require("fs");
+import fs from "fs";
 
 const filename = "customerOrder.json";
 

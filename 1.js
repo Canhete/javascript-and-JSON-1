@@ -6,7 +6,7 @@ id (number), name (string), price (number)
 Output:
 products.json (valid JSON) */
 
-const fs = require("fs");
+import fs from "fs";
 
 function validateJson(input){
     try {

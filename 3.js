@@ -1,20 +1,24 @@
 // Validate the syntax of orders
 
-const fs = require("fs");
+import fs from "fs";
 
 const filename = "customerOrder.json";
-const file = fs.readFileSync(filename, "utf-8");
-const jsonfile = JSON.parse(file);
 
-
-function ValidateSyntaxOrders(input){
+function ValidateSyntaxOrders(filename){
     try {
-        const orders = input.filter((e) => e["orderId"]);
-        console.log("Valid JSON Syntax in orders!");
-        console.log(orders);
+        const file = fs.readFileSync(filename, "utf-8");
+        const jsonfile = JSON.parse(file);
+        console.log("Valid JSON Syntax!");
+
+        if(Array.isArray(jsonfile)){
+            const orders = jsonfile.filter((e) => e.orderId);
+            console.log("Orders with valid orderId:", orders);
+        } else {
+            console.log("JSON is not a array!");
+        }
     } catch (err) {
         console.log("Invalid JSON Syntax in orders!");
     }
 }
 
-ValidateSyntaxOrders(jsonfile);
+ValidateSyntaxOrders(filename);

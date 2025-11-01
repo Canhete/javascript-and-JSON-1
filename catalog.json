@@ -1,0 +1,85 @@
+{
+    "storename": "Miau-Miau Café Gato",
+    "menu": [
+        {
+            "appetizers": [
+                {
+                    "name": "Garlic Bread",
+                    "price": 9.9
+                },
+                {
+                    "name": "Caesar Salad",
+                    "price": 12.5
+                },
+                {
+                    "name": "Rolled Cheese",
+                    "price": 7
+                },
+                {
+                    "name": "Rain Cakes",
+                    "price": 10
+                }
+            ]
+        },
+        {
+            "maincourses": [
+                {
+                    "name": "Grilled Chicken with Vegetables",
+                    "price": 24.9
+                },
+                {
+                    "name": "Spaghetti Bolognese",
+                    "price": 22
+                },
+                {
+                    "name": "Chicken Strogonoff",
+                    "price": 25
+                },
+                {
+                    "name": "Hard Boiled Omelettes",
+                    "price": 18.5
+                }
+            ]
+        },
+        {
+            "desserts": [
+                {
+                    "name": "Chocolate Mousse",
+                    "price": 11
+                },
+                {
+                    "name": "Cheesecake",
+                    "price": 13
+                },
+                {
+                    "name": "Cupcakes",
+                    "price": 8.5
+                },
+                {
+                    "name": "Birthday Cake",
+                    "price": 17
+                }
+            ]
+        },
+        {
+            "drinks": [
+                {
+                    "name": "Water",
+                    "price": 3
+                },
+                {
+                    "name": "Soda",
+                    "price": 6
+                },
+                {
+                    "name": "Wine",
+                    "price": 15
+                },
+                {
+                    "name": "Beer",
+                    "price": 9
+                }
+            ]
+        }
+    ]
+}
